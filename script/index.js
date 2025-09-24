@@ -92,13 +92,11 @@ document.addEventListener("DOMContentLoaded", () => {
             const storedOtp = localStorage.getItem("generatedOtp");
 
             if (userInput === storedOtp) {
-                alert("Resgistration Process Successfuly Completed, Thankyou for Joining with us!"
-                );
                 otpPara.innerText = "Successfuly Registered!";
                 otpInput.value = " ";
             }
             else {
-                alert("Please Enter Valid OTP!");
+                
                 otpPara.innerText = "Invalid OTP!";
                 return;
             }
@@ -111,6 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     })
+
 
 
 
